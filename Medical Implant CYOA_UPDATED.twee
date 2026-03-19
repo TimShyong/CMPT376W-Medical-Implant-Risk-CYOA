@@ -1,0 +1,380 @@
+:: StoryTitle
+Medical Implant CYOA
+
+
+:: StoryData
+{
+  "ifid": "01039E04-3A9A-4EF0-9B6E-17A8056226C4",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Homescreen",
+  "zoom": 1
+}
+
+
+:: Agree to Sell User Data {"position":"1425,675","size":"100,100"}
+"I'll get started on the API right away" you say. The CEO beams, clapping you on shoulder.
+
+''CEO:'' "That's the team-player spirit we saw in you during the interview". You head back to your desk to get started on the API.
+----
+([[Continue->Potential Security Vulnerability]])
+
+
+:: Bug Bounty Article {"position":"450,650","size":"100,100"}
+###  Corazón - Our Bug Bounty Program
+
+
+Corazón is commited to securing our patients' data. Which is why we encourage anyone to report vulnerabilities in our systems via our bug bounty hunting initiative for a cash reward!
+
+--------
+([[Research More->Research the company]])
+([[Accept the job interview->Orientation]])
+
+
+:: Charity Article {"position":"450,525","size":"100,100"}
+### Corazón Gives Back!
+
+At Corazón, we don't want the cost of cutting edge care to prevent life saving diagnoses. 
+
+Which is why Corazón is proud to anounce we've partnered with several charities to provide free or reduced access to patients living below the poverty line!
+
+- Corazón CEO
+-------
+([[Research More->Research the company]])
+([[Accept the job interview->Orientation]])
+
+
+:: Company's Commitment Article {"position":"450,375","size":"100,100"}
+### Corazón Commits To Keeping Our User Data Safe
+Millions of patients around the world trust Corazón with their data!
+
+Our heart device comes with a smart phone app to help monitor and control our devices wirelessly. We've used state of the art short range encrypted wireless connections to transfer and store your data. 
+----
+([[Research More->Research the company]])
+([[Accept the job interview->Orientation]])
+
+
+:: Fired With Cause {"position":"775,925","size":"100,100"}
+### Game Over
+
+Joe has always been stubborn about accepting help and would never willingly tell other's because he doesn't want to be a burden. You decide to investigate to find out how he's doing.
+
+
+You dive into the company's filesystem and access Joe's medical records. You're halfway through his most recent medical report when a shadow falls over your keyboard. 
+
+
+''Dave:''"Find the duplication bug yet?"
+
+
+You jump, nearly knocking your coffee over. It's Dave, the Engineering Manager. She isn't looking at you, she's looking at your monitor. His eyes narrow as they see the name "Joe Smith" at the top of the medical report.
+
+
+''Dave:'' "That's not a log file,.... and that's User ID isn't in the ticket I gave you."
+
+
+Before you can stutter out an excuse Dave reaches over and turns off your computer.
+
+
+''Dave:'' "Step away from the desk. Now"
+
+-------
+You are fired, your badge is deactived, and you are escorted out of the building.
+
+
+:: First Ticket {"position":"775,775","size":"100,100"}
+Looks like you're all ready to go! Dave, the engineering team manager has assigned you this ticket:
+
+"A small number of users' heart data are being duplicated somewhere along our ingestion workflow Here are the 3 User IDs: ...."
+
+You dive into the database logs and begin query the database to cross reference the User IDs. Suddenly a name catches your attention and causes your heart to stop. 
+
+"Joe Smith" your brother in law's name flashes across your screen alongside the "Critical" status.
+
+
+It isn't related to your task at hand but you're concerned about your family member's health.
+-----
+([[Investigate your friend's data->Fired With Cause]])
+([[Focus on the task at hand]])
+
+
+
+:: Focus on the task at hand {"position":"925,775","size":"100,100"}
+Looking into Joe's medical history would be a massive breach of protocol. You decide to focus on the task at hand and just try to get through the day.
+------
+([[Continue->Selling User Data]])
+
+
+:: Get Job Offer {"position":"300,1000","size":"100,100"}
+
+It's ''Day 1001'' of the job hunt. After another day of nothing but automated rejections and ghost listings, you're just about to close your laptop for the day when you get a text from your good friend Alex.
+
+''Alex:'' "Hey! Long time no see! The team I'm apart of at Corazón is hiring! We need a software engineer that's worked with electronic health records.The company makes medical devices that help thousands of people and the pay is pretty great as well! Want me to refer you to my manager?"
+
+-------
+//You're desperate for a job but also want to research the company first to find out if it's a good fit.//
+([[Research the company a bit first->Research the company]])
+([[Accept the job interview->Orientation]])
+
+
+:: Homescreen {"position":"100,1000","size":"100,100"}
+#Medical Implant Risk Analysis
+
+==><==
+([[Start->Get Job Offer]])
+([[References]])
+
+
+:: Implantable Heart Health Montiroing Device Article {"position":"450,250","size":"100,100"}
+   ### Implantable Loop Recorder - A Lifesaving Device!
+ Loop Recorders are small devices that are implanted under the skin of the chest to record a patient's heartbeat. They can capture small changes in heart beat that other devices might miss!
+ 
+ Doctors might recommend an implantable health monitoring device to help diagnose:
+   **  an irregular heartbeat (arrhythmia) 
+   ** an unexplained stroke 
+    ** unexplained fainting 
+-------
+([[Research More->Research the company]])
+([[Accept the job interview->Orientation]])
+
+
+:: Investigate Pharmaceutical Company {"position":"1250,600","size":"100,100"}
+You lean forward and gather your thoughts.
+
+"What exactly is this private pharmaceutical company planning to do with all of our patient's heart data?"
+
+Your manager shrugs, but the CEO answers with a practiced smile:
+
+CEO: "The official line is 'training an AI model to pre-emptively identify a stroke.' But off the record? They might be compiling data to create a commerical asset they can sell. Honestly, once the data changes hands, it's not our responsibility. Our job is just to setup an API"
+
+-----
+([[Ask More Questions->Selling User Data]])
+([[Agree to do task->Agree to Sell User Data]])
+([[Refuse to do task->Refuse to Sell User Data]])
+
+
+:: Orientation {"position":"625,775","size":"100,100"}
+Congratulations! 
+
+You passed the interview! Welcome to Corazón! Your first few days are a whirl, everyone seems super busy but excited for you to join the team. You're given some onboarding documentation about what the company does as well as your first task.
+_______
+
+TODO: Come up with some onboarding documentation
+([[Start your first task ->First Ticket]])
+
+
+:: Potential Security Vulnerability {"position":"1600,675","size":"100,100"}
+As you begin working on the API for the pharmaceutical company, you start reviewing how device data is handled.
+
+While testing, you notice something unusual in the device logic.
+
+A value used during device resets is hard coded instead of being unique for each device.
+
+At first, it seems harmless. But after digging deeper, you realize this could affect how the device behaves after a reset.
+
+In some cases, the device may continue running with incorrect or uncalibrated settings. This could lead to inaccurate readings — either false alarms or missed heart irregularities.
+
+You bring this up with a senior engineer.
+
+They hesitate before responding.
+
+''Engineer:'' "Yeah... we knew about that. It was supposed to be temporary, but fixing it would’ve delayed release. Management decided to ship anyway."
+
+They lower their voice.
+
+''Engineer:'' "They also don’t want to touch it right now… especially with the pharmaceutical deal happening."
+
+This is no longer just about data.
+
+This could impact patient safety.
+
+----
+[[Bring it up to your manager->Whistleblowing Dilema]]
+[[Talk more with the engineer->Whistleblowing Dilema]]
+[[Ignore it and continue working->Whistleblowing Dilema]]
+----
+([[Continue->Whistleblowing Dilema]])
+
+
+:: Reasons to Sell User's Health Data {"position":"1250,975","size":"100,100"}
+"Why are we doing this, is the company in trouble?" you bluntly ask.
+
+The CEO sighs, dropping the corporate persona.
+
+''CEO'' "Startups are expensive. We've expanded too quickly and the venture capitalist money is running out. Our charity program is also bleeding us dry. The pharmaceutical company is also willing to make a charitable 'donation' that would fund another 10,000 low-income patients."
+
+''Manager'' "If you're worried about the legality, don't be. We snuck a clause into the Terms & Conditions months ago that allows for third party data transfers. It's perfectly legal as long as we anonymize the data."
+
+''CEO'' "Try to think about it as keeping our mission alive"
+---------
+([[Ask More Questions->Selling User Data]])
+([[Agree to do task->Agree to Sell User Data]])
+([[Refuse to do task->Refuse to Sell User Data]])
+
+
+:: References {"position":"300,1200","size":"100,100"}
+# References
+*     https://www.mayoclinic.org/tests-procedures/implantable-loop-recorder/about/pac-20579708 
+*     https://www.biotronik.com/en-ca/patients/patients-and-caregivers/heart-monitoring/implantable-heart-monitor 
+* https://www.ctvnews.ca/vancouver/article/dozens-of-bc-healthcare-workers-snooped-on-lapu-lapu-festival-victims-medical-records-oipc-report/
+* https://www.cbc.ca/news/health/health-data-records-pharmaceutical-private-clinics-1.7529955
+* https://pmc.ncbi.nlm.nih.gov/articles/PMC12020962/
+
+
+
+:: Refuse to Sell User Data {"position":"1425,925","size":"100,100"}
+### Game Over
+
+"I can't do it", you say. "This violates every principle of user trust we claim to stand for."
+
+The room goes cold. Your manager looks at the CEO, then back at you.
+
+''Manager:'' "How disapointing.... We hired you because we thought you'd do as you're told. Not act as the company's moral compass. If you won't do the work we'll find someone who will".
+
+
+:: Research the company {"position":"300,775","size":"100,100"}
+//You stumble upon a couple interesting articles://
+--------------
+([[Read the article: Implantable Loop Recorder - A Lifesaving Device!->Implantable Heart Health Montiroing Device Article]])
+([[Read the article: Corazón Commits To Keeping Our User Data Safe ->Company's Commitment Article]])
+([[Read the article: Corazón Gives Back!->Charity Article]])
+([[Read the article: Corazón - Our Bug Bounty Program  ->Bug Bounty Article]])
+([[Accept the job interview->Orientation]])
+
+
+:: Selling User Data {"position":"1075,775","size":"100,100"}
+Your manager is pleased with how quickly you're getting up to speed. They love how you identified the root cause of the issued and approve of your well thought out solution. 
+
+A few days later, your CEO calls a townhall and  announces a private pharmaceutical company has approached them and wants to buy their data. 
+
+Seeing this as a great opportunity to show your impact, your manager wants this task to be assigned to you. 
+
+You set up a meeting with your manager and CEO to gather requirements. There you: 
+------
+([[Ask why the pharaceutical company wants our data->Investigate Pharmaceutical Company]])
+([[Ask why is Corazón doing this->Reasons to Sell User's Health Data]])
+([[Raise concern about our user's health data privacy->User Health Data Privacy]])
+([[Agree to do task->Agree to Sell User Data]])
+([[Refuse to do task->Refuse to Sell User Data]])
+
+
+:: User Health Data Privacy {"position":"1250,800","size":"100,100"}
+"Isn't this basically selling our users' identities?" you ask. "With modern AI, 'anonymized' data can be re-identified in seconds by cross-referencing records."
+
+''Manager:'' "Technically as long as we strip the personally identifiable information like names, SINs, and PHNs, we've met our regulatory obligations"
+
+''CEO'' "Just try to focus on the fact that this 'donation' will give us the opportunity to save 10,000 lives."
+-------
+([[Ask More Questions->Selling User Data]])
+([[Agree to do task->Agree to Sell User Data]])
+([[Refuse to do task->Refuse to Sell User Data]])
+
+
+:: Whistleblowing Dilema {"position":"1750,675","size":"100,100"}
+Later that day, your friend Alex pulls you aside.
+
+They look stressed.
+
+''Alex:'' "You noticed it too, right? The reset issue."
+
+You nod.
+
+Alex sighs.
+
+''Alex:'' "Management knows. They’ve known for a while. But they don’t want to risk slowing things down… especially not now."
+
+They pause.
+
+''Alex:'' "And now we’re selling data too? It just feels wrong."
+
+Alex looks around to make sure no one is listening.
+
+''Alex:'' "I’ve been thinking… if they won’t fix it internally, maybe someone needs to force them to."
+
+You immediately understand what they mean.
+
+Whistleblowing.
+
+If this becomes public:
+- patients could be warned
+- the company could be investigated
+- the issue might finally be fixed
+
+But:
+- you could lose your job
+- Alex could lose theirs
+- the company — and its charity programs — could collapse
+
+Alex looks at you.
+
+''Alex:'' "I need to decide soon. Are you with me?"
+
+----
+[[Support Alex and expose the issue->Ending: Whistleblow]]
+[[Tell Alex to report internally instead->Ending: Internal]]
+[[Stay out of it->Ending: Silence]]
+[[Warn management about Alex->Ending: Complicity]]
+
+
+:: Ending: Whistleblow
+### Ending: Whistleblower
+
+The story goes public.
+
+News spreads quickly about the device vulnerability and the company’s data practices.
+
+Regulators step in. Patients are notified.
+
+The company takes a major hit.
+
+You and Alex both lose your jobs.
+
+But the issue is no longer hidden.
+
+Maybe you did the right thing.
+
+:: Ending: Internal
+### Ending: Internal Resolution
+
+You convince Alex to report the issue internally.
+
+Management resists at first, but pressure builds.
+
+Eventually, the company is forced to review the issue.
+
+Fixes are slow, but action is taken.
+
+You keep your job — but things are tense.
+
+You’re no longer seen the same way.
+
+:: Ending: Silence
+### Ending: Silence
+
+You choose not to get involved.
+
+Weeks later, the issue becomes public anyway.
+
+The company faces backlash.
+
+Layoffs begin.
+
+You tried to stay safe — but it didn’t protect you.
+
+You’re left wondering if you should have acted sooner.
+
+:: Ending: Complicity
+### Ending: Complicity
+
+You warn management about Alex.
+
+They act quickly.
+
+Alex is investigated and removed.
+
+The issue is kept quiet.
+
+The company continues operating.
+
+You keep your job.
+
+But you know what happened — and your role in it.
