@@ -55,8 +55,13 @@ Our heart device comes with a smart phone app to help monitor and control our de
 
 
 :: Credits {"position":"300,1325","size":"100,100"}
-Group Member Roles:
-- 
+Group Member and Roles:
+* Tim Shyong
+** Created the Job Offer, Research the Company, Orientation, First Ticket, Selling User Data scenarios
+** Added some more reasoning to "Manager Rejects Concerns" and "Talk to your coworkers (Rob)"
+* Kyaw Htet Aung 
+* Hitarth arunkumar Patel 
+
 
 
 :: Ending: Complicity {"position":"2650,975","size":"100,100"}
@@ -196,7 +201,7 @@ You dive into the database logs and begin query the database to cross reference 
 
 It isn't related to your task at hand but you're concerned about your family member's health.
 -----
-([[Investigate your friend's data->Fired With Cause]])
+([[Investigate your brother in law's data->Fired With Cause]])
 ([[Focus on the task at hand]])
 
 
@@ -587,7 +592,7 @@ Alex: "Our device is used to record a patient's heartbeat. They don't send elect
 
 ''Rob:'' "Our device sends data through short range wireless signals, so any malicious party would have to be close to our clients. That's more of a physical attack rather than a remote hack over the internet. It's not exactly something that can be pulled off easily en mass."
 
-Quietly Alex whispers to you. 
+Quietly Rob whispers to you. 
 
 ''Rob:'' "And even if this eventually leads to a client's data being leaked, well we've been selling 'anonymized' data already so it's already out there."
 
