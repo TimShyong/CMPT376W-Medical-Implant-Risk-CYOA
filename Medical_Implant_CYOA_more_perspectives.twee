@@ -60,6 +60,13 @@ Group Member and Roles:
 ** Created the Job Offer, Research the Company, Orientation, First Ticket, Selling User Data scenarios
 ** Added some more reasoning to "Manager Rejects Concerns" and "Talk to your coworkers (Rob)"
 * Kyaw Htet Aung 
+** Made a text outline for the potential decision paths of the player when "Potential Security Vulnerability" starts
+** Refined the "Potential Security Vulnerability" scenario so that it makes more sense plot-wise. Added actual decision branches to it as well
+** Added new branches "Manager Rejects Concerns", "Ignore Issue", "Consult Expert (now changed to Talk to Coworkers)"
+** Created branches "Talk to Alex (Low/High Confidence)" 
+** Modified all the endings so that they stay consistent with the new scenarios
+** Modified "Whistleblowing Dilemma" so that the plot stays consistent with new additions. 
+** Removed path to Complicity ending because it didn't make sense. 
 * Hitarth arunkumar Patel 
 
 
