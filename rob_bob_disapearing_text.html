@@ -390,7 +390,36 @@ But hearing it out loud makes the weight of the decision clearer.
 
 ----
 [[Decide what to do next-&gt;Whistleblowing Dilemma]]
-[[Step back and leave it alone-&gt;Ignore Issue]]</tw-passagedata><tw-passagedata pid="26" name="Talk to Alex (Low Confidence)" tags="" position="2250,1200" size="100,100">Later that day, you find Alex and ask if they have a minute.
+[[Step back and leave it alone-&gt;Ignore Issue]]</tw-passagedata><tw-passagedata pid="26" name="Talk to Alex (Mid Confidence)" tags="" position="0,0" size="100,100">You find Alex and explain what you&#39;ve discovered.
+
+You tell him about the reset issue, and that you&#39;ve already talked to Bob and Rob.
+
+They didn&#39;t agree.
+
+Bob thinks it&#39;s serious. Rob doesn&#39;t.
+
+Alex listens, frowning slightly.
+
+&#39;&#39;Alex:&#39;&#39; &quot;…yeah, that makes this tricky.&quot;
+
+He pauses for a moment.
+
+&#39;&#39;Alex:&#39;&#39; &quot;I&#39;m not really the best person to judge something like this.&quot;
+
+&#39;&#39;Alex:&#39;&#39; &quot;If the people closer to it can&#39;t agree, I don&#39;t think I can give you a better answer.&quot;
+
+He looks at you.
+
+&#39;&#39;Alex:&#39;&#39; &quot;You&#39;re going to have to decide what you think this is.&quot;
+
+There&#39;s a brief silence.
+
+&#39;&#39;Alex:&#39;&#39; &quot;And what you&#39;re willing to do about it.&quot;
+
+----
+
+[[Decide what to do next-&gt;Whistleblowing Dilemma]]
+[[Step back and leave it alone-&gt;Ignore Issue]]</tw-passagedata><tw-passagedata pid="27" name="Talk to Alex (Low Confidence)" tags="" position="2250,1200" size="100,100">Later that day, you find Alex and ask if they have a minute.
 
 You explain what you found in the reset logic, but you also admit that you are not fully sure what it means yet.
 
@@ -426,7 +455,7 @@ Still, the possibility of patient harm is hard to ignore.
 
 ----
 [[Rethink your options carefully-&gt;Whistleblowing Dilemma]]
-[[Drop the issue for now-&gt;Ignore Issue]]</tw-passagedata><tw-passagedata pid="27" name="Talk to Bob" tags="" position="2050,575" size="100,100">You walk them through what you&#39;ve found.
+[[Drop the issue for now-&gt;Ignore Issue]]</tw-passagedata><tw-passagedata pid="28" name="Talk to Bob" tags="" position="2050,575" size="100,100">You walk them through what you&#39;ve found.
 
 They don&#39;t interrupt.
 
@@ -467,10 +496,17 @@ But also more responsibility.
     &lt;br&gt;
 ]
 
-[[Talk to Alex-&gt;Talk to Alex (High Confidence)]]&lt;br&gt;
+(link: &quot;Talk to Alex&quot;)[
+    (if: (history:) contains &quot;Talk to Rob&quot;)[
+        (go-to: &quot;Talk to Alex (Mid Confidence)&quot;)
+    ]
+    (else:)[
+        (go-to: &quot;Talk to Alex (High Confidence)&quot;)
+    ]
+]&lt;br&gt;
 [[Decide it&#39;s too risky and step back-&gt;Ignore Issue]]&lt;br&gt;
 [[Think through the situation on your own-&gt;Whistleblowing Dilemma]]
-}</tw-passagedata><tw-passagedata pid="28" name="Talk to Rob" tags="" position="2050,825" size="100,100">You decide to talk to Rob.
+}</tw-passagedata><tw-passagedata pid="29" name="Talk to Rob" tags="" position="2050,825" size="100,100">You decide to talk to Rob.
 
 After listening to your concern, he leans back in his chair and starts to think.
 
@@ -497,7 +533,7 @@ Quietly Rob whispers to you.
 
 (link: &quot;Talk to Alex&quot;)[
     (if: (history:) contains &quot;Talk to Bob&quot;)[
-        (go-to: &quot;Talk to Alex (High Confidence)&quot;)
+        (go-to: &quot;Talk to Alex (Mid Confidence)&quot;)
     ]
     (else:)[
         (go-to: &quot;Talk to Alex (Low Confidence)&quot;)
@@ -505,7 +541,7 @@ Quietly Rob whispers to you.
 ]&lt;br&gt;
 [[Decide it&#39;s too risky and step back-&gt;Ignore Issue]]&lt;br&gt;
 [[Think through the situation on your own-&gt;Whistleblowing Dilemma]]
-}</tw-passagedata><tw-passagedata pid="29" name="Talk to your coworkers" tags="" position="1800,700" size="100,100">You decide not to escalate yet.
+}</tw-passagedata><tw-passagedata pid="30" name="Talk to your coworkers" tags="" position="1800,700" size="100,100">You decide not to escalate yet.
 
 Instead, you reach out to someone more experienced.
 
@@ -520,7 +556,7 @@ And there&#39;s always your friend Alex.
 [[Talk to Rob]]
 [[Talk to Alex-&gt;Talk to Alex (Low Confidence)]]
 [[Decide it&#39;s too risky and step back-&gt;Ignore Issue]]
-[[Think through the situation on your own-&gt;Whistleblowing Dilemma]]</tw-passagedata><tw-passagedata pid="30" name="User Health Data Privacy" tags="" position="1250,800" size="100,100">&quot;Isn&#39;t this basically selling our users&#39; identities?&quot; you ask. &quot;With modern AI, &#39;anonymized&#39; data can be re-identified in seconds by cross-referencing records.&quot;
+[[Think through the situation on your own-&gt;Whistleblowing Dilemma]]</tw-passagedata><tw-passagedata pid="31" name="User Health Data Privacy" tags="" position="1250,800" size="100,100">&quot;Isn&#39;t this basically selling our users&#39; identities?&quot; you ask. &quot;With modern AI, &#39;anonymized&#39; data can be re-identified in seconds by cross-referencing records.&quot;
 
 &#39;&#39;Manager:&#39;&#39; &quot;Technically as long as we strip the personally identifiable information like names, SINs, and PHNs, we&#39;ve met our regulatory obligations&quot;
 
@@ -528,7 +564,7 @@ And there&#39;s always your friend Alex.
 -------
 ([[Ask more questions-&gt;Selling User Data]])
 ([[Agree to do task-&gt;Agree to Sell User Data]])
-([[Refuse to do task-&gt;Refuse to Sell User Data]])</tw-passagedata><tw-passagedata pid="31" name="Whistleblowing Dilemma" tags="" position="2450,625" size="100,100">You step back and try to think clearly about what you know.
+([[Refuse to do task-&gt;Refuse to Sell User Data]])</tw-passagedata><tw-passagedata pid="32" name="Whistleblowing Dilemma" tags="" position="2450,625" size="100,100">You step back and try to think clearly about what you know.
 
 There&#39;s a bug in the reset logic.
 

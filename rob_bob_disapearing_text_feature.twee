@@ -493,6 +493,40 @@ But hearing it out loud makes the weight of the decision clearer.
 [[Step back and leave it alone->Ignore Issue]]
 
 
+:: Talk to Alex (Mid Confidence)
+
+You find Alex and explain what you've discovered.
+
+You tell him about the reset issue, and that you've already talked to Bob and Rob.
+
+They didn't agree.
+
+Bob thinks it's serious. Rob doesn't.
+
+Alex listens, frowning slightly.
+
+''Alex:'' "…yeah, that makes this tricky."
+
+He pauses for a moment.
+
+''Alex:'' "I'm not really the best person to judge something like this."
+
+''Alex:'' "If the people closer to it can't agree, I don't think I can give you a better answer."
+
+He looks at you.
+
+''Alex:'' "You're going to have to decide what you think this is."
+
+There's a brief silence.
+
+''Alex:'' "And what you're willing to do about it."
+
+----
+
+[[Decide what to do next->Whistleblowing Dilemma]]
+[[Step back and leave it alone->Ignore Issue]]
+
+
 :: Talk to Alex (Low Confidence) {"position":"2250,1200","size":"100,100"}
 Later that day, you find Alex and ask if they have a minute.
 
@@ -575,7 +609,14 @@ But also more responsibility.
     <br>
 ]
 
-[[Talk to Alex->Talk to Alex (High Confidence)]]<br>
+(link: "Talk to Alex")[
+    (if: (history:) contains "Talk to Rob")[
+        (go-to: "Talk to Alex (Mid Confidence)")
+    ]
+    (else:)[
+        (go-to: "Talk to Alex (High Confidence)")
+    ]
+]<br>
 [[Decide it's too risky and step back->Ignore Issue]]<br>
 [[Think through the situation on your own->Whistleblowing Dilemma]]
 }
@@ -609,7 +650,7 @@ Quietly Rob whispers to you.
 
 (link: "Talk to Alex")[
     (if: (history:) contains "Talk to Bob")[
-        (go-to: "Talk to Alex (High Confidence)")
+        (go-to: "Talk to Alex (Mid Confidence)")
     ]
     (else:)[
         (go-to: "Talk to Alex (Low Confidence)")
