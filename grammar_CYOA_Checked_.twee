@@ -170,10 +170,10 @@ You dive into the company's filesystem and access Joe's medical records. You're 
 You jump, nearly knocking your coffee over. It's Dave, the Engineering Manager. He isn't looking at you; he's looking at your monitor. His eyes narrow as he sees the name "Joe Smith" at the top of the medical report.
 
 
-''Dave:'' "That's not a log file... and that's User ID isn't in the ticket I gave you."
+''Dave:'' "That's not a log file... and that User ID isn't in the ticket I gave you."
 
 
-Before you can stutter out an excuse Dave reaches over and turns off your computer.
+Before you can stutter out an excuse, Dave reaches over and turns off your computer.
 
 
 ''Dave:'' "Step away from the desk. Now!"
@@ -182,7 +182,7 @@ Before you can stutter out an excuse Dave reaches over and turns off your comput
 You try to explain, telling him Joe is family and that you were just worried, but Dave’s expression doesn't change at all.
 
 
-''Dave:'' "I don't care if he's your brother in law. You didn't just 'check' a file. You bypassed all our security measures to access highly sensitive Private Health Information without a clinical or technical requirement. This is a massive violation of PIPEDA and our internal data governance policy." 
+''Dave:'' "I don't care if he's your brother-in-law. You didn't just 'check' a file. You bypassed all our security measures to access highly sensitive Private Health Information without a clinical or technical requirement. This is a massive violation of PIPEDA and our internal data governance policy." 
 -------
 You are fired, your badge is deactivated, and you are escorted out of the building.
 
@@ -194,12 +194,12 @@ Looks like you're all ready to go! Dave, the engineering team manager has assign
 
 You dive into the database logs and begin querying the database to cross reference the User IDs. Suddenly, a name catches your attention and causes your heart to stop. 
 
-"Joe Smith" your brother in law's name flashes across your screen alongside the "Critical" status.
+"Joe Smith" your brother-in-law's name flashes across your screen alongside the "Critical" status.
 
 
 It isn't related to your task at hand but you're concerned about your family member's health.
 -----
-[[Investigate your brother in law's data->Fired With Cause]]
+[[Investigate your brother-in-law's data->Fired With Cause]]
 [[Focus on the task at hand]]
 
 
@@ -326,7 +326,7 @@ Dave leans back.
 
 There is a long pause.
 
-''Dave:'' "And to be honest, even if you proved it, there's no easy fix. We designed our implants for security, not remote access. We can't just patch the hard-coded value in the hardware like we can push update our app's UI. Any hotfix would involve a physical recall, and Corazón can't survive that kind of reputation loss. I doubt we'd be able to compensate our customers by covering their surgeries. We don't have the money to cover 100,000 surgeries."
+''Dave:'' "And to be honest, even if you proved it, there's no easy fix. We designed our implants for security, not remote access. We can't just patch the hard-coded value in the hardware like we can push an update to our app's UI. Any hotfix would involve a physical recall, and Corazón can't survive that kind of reputation loss. I doubt we'd be able to compensate our customers by covering their surgeries. We don't have the money to cover 100,000 surgeries."
 
 ''Dave:'' "Let's just focus on your assigned work."
 
@@ -402,7 +402,7 @@ Either way, this is now your problem.
 
 
 :: Reasons to Sell User's Health Data {"position":"1250,975","size":"100,100"}
-"Why are we doing this, is the company in trouble?" you bluntly ask.
+"Why are we doing this? Is the company in trouble?" you bluntly ask.
 
 The CEO sighs, dropping the corporate persona.
 
