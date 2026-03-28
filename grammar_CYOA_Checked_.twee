@@ -15,7 +15,10 @@ Medical Implant CYOA
 :: Agree to Sell User Data {"position":"1425,675","size":"100,100"}
 "I'll get started on the API right away" you say. The CEO beams, clapping you on the shoulder.
 
-''CEO:'' "That's the team-player spirit we saw in you during the interview." You head back to your desk to get started on the API.
+''CEO:'' "That's the team-player spirit we saw in you during the interview." 
+
+You head back to your desk to get started on the API.
+
 ----
 [[Continue->Potential Security Vulnerability]]
 
@@ -183,6 +186,7 @@ You try to explain, telling him Joe is family and that you were just worried, bu
 
 
 ''Dave:'' "I don't care if he's your brother-in-law. You didn't just 'check' a file. You bypassed all our security measures to access highly sensitive Private Health Information without a clinical or technical requirement. This is a massive violation of PIPEDA and our internal data governance policy." 
+
 -------
 You are fired, your badge is deactivated, and you are escorted out of the building.
 
@@ -297,9 +301,9 @@ You lean forward and gather your thoughts.
 
 "What exactly is this private pharmaceutical company planning to do with all of our patient's heart data?"
 
-Your manager shrugs, but the CEO answers with a practiced smile:
+Your manager shrugs, but the CEO answers with a practiced smile.
 
-CEO: "The official line is 'training an AI model to pre-emptively identify a stroke.' But off the record? They might be compiling data to create a commercial asset they can sell. Honestly, once the data changes hands, it's not our responsibility. Our job is just to set up an API"
+CEO: "The official line is 'training an AI model to pre-emptively identify a stroke.' But off the record? They might be compiling data to create a commercial asset they can sell. Honestly, once the data changes hands, it's not our responsibility. Our job is just to set up an API."
 
 -----
 [[Ask more questions->Selling User Data]]
@@ -410,7 +414,8 @@ The CEO sighs, dropping the corporate persona.
 
 ''Manager:'' "If you're worried about the legality, don't be. We snuck a clause into the Terms & Conditions months ago that allows for third party data transfers. It's perfectly legal as long as we anonymize the data."
 
-''CEO:'' "Try to think about it as keeping our mission alive"
+''CEO:'' "Try to think about it as keeping our mission alive."
+
 ---------
 [[Ask more questions->Selling User Data]]
 [[Agree to do task->Agree to Sell User Data]]
@@ -492,39 +497,6 @@ But hearing it out loud makes the weight of the decision clearer.
 [[Step back and leave it alone->Ignore Issue]]
 
 
-:: Talk to Alex (Mid Confidence) {"position":"2275,775","size":"100,100"}
-You find Alex and explain what you've discovered.
-
-You tell him about the reset issue, and that you've already talked to Bob and Rob.
-
-They didn't agree.
-
-Bob thinks it's serious. Rob doesn't.
-
-Alex listens, frowning slightly.
-
-''Alex:'' "…yeah, that makes this tricky."
-
-He pauses for a moment.
-
-''Alex:'' "I'm not really the best person to judge something like this."
-
-''Alex:'' "If the people closer to it can't agree, I don't think I can give you a better answer."
-
-He looks at you.
-
-''Alex:'' "You're going to have to decide what you think this is."
-
-There's a brief silence.
-
-''Alex:'' "And what you're willing to do about it."
-
-----
-
-[[Decide what to do next->Whistleblowing Dilemma]]
-[[Step back and leave it alone->Ignore Issue]]
-
-
 :: Talk to Alex (Low Confidence) {"position":"2250,1200","size":"100,100"}
 Later that day, you find Alex and ask if he has a minute.
 
@@ -563,6 +535,39 @@ Still, the possibility of patient harm is hard to ignore.
 ----
 [[Rethink your options carefully->Whistleblowing Dilemma]]
 [[Drop the issue for now->Ignore Issue]]
+
+
+:: Talk to Alex (Mid Confidence) {"position":"2275,775","size":"100,100"}
+You find Alex and explain what you've discovered.
+
+You tell him about the reset issue, and that you've already talked to Bob and Rob.
+
+They didn't agree.
+
+Bob thinks it's serious. Rob doesn't.
+
+Alex listens, frowning slightly.
+
+''Alex:'' "…yeah, that makes this tricky."
+
+He pauses for a moment.
+
+''Alex:'' "I'm not really the best person to judge something like this."
+
+''Alex:'' "If the people closer to it can't agree, I don't think I can give you a better answer."
+
+He looks at you.
+
+''Alex:'' "You're going to have to decide what you think this is."
+
+There's a brief silence.
+
+''Alex:'' "And what you're willing to do about it."
+
+----
+
+[[Decide what to do next->Whistleblowing Dilemma]]
+[[Step back and leave it alone->Ignore Issue]]
 
 
 :: Talk to Bob {"position":"2050,575","size":"100,100"}
@@ -678,9 +683,10 @@ And there's always your friend Alex.
 :: User Health Data Privacy {"position":"1250,800","size":"100,100"}
 "Isn't this basically selling our users' identities?" you ask. "With modern AI, 'anonymized' data can be re-identified in seconds by cross-referencing records."
 
-''Manager:'' "Technically as long as we strip the personally identifiable information like names, SINs, and PHNs, we've met our regulatory obligations"
+''Manager:'' "Technically as long as we strip the personally identifiable information like names, SINs, and PHNs, we've met our regulatory obligations."
 
 ''CEO:'' "Just try to focus on the fact that this 'donation' will give us the opportunity to save 10,000 lives."
+
 -------
 [[Ask more questions->Selling User Data]]
 [[Agree to do task->Agree to Sell User Data]]
@@ -724,4 +730,3 @@ If you take it outside the company… there's no going back.
 [[Whistleblow and take the issue outside the company->Ending: Whistleblow]]
 [[Push the issue more strongly through internal channels->Ending: Internal]]
 [[Drop the issue and move on->Ending: Silence]]
-
