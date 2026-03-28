@@ -167,7 +167,7 @@ You dive into the company's filesystem and access Joe's medical records. You're 
 ''Dave:''"Find the duplication bug yet?"
 
 
-You jump, nearly knocking your coffee over. It's Dave, the Engineering Manager. She isn't looking at you, she's looking at your monitor. His eyes narrow as they see the name "Joe Smith" at the top of the medical report.
+You jump, nearly knocking your coffee over. It's Dave, the Engineering Manager. He isn't looking at you; he's looking at your monitor. His eyes narrow as he sees the name "Joe Smith" at the top of the medical report.
 
 
 ''Dave:'' "That's not a log file,.... and that's User ID isn't in the ticket I gave you."
@@ -212,7 +212,7 @@ Looking into Joe's medical history would be a massive breach of protocol. You de
 :: Get Job Offer {"position":"300,1000","size":"100,100"}
 It's Day 101 of the job hunt. After another day of nothing but automated rejections and ghost listings, you're just about to close your laptop for the day when you get a text from your good friend Alex.
 
-''Alex:'' "Hey! Long time no see! The team I'm apart of at Corazón is hiring! We need a software engineer that's worked with electronic health records. The company makes medical devices that help thousands of people and the pay is pretty great as well! Want me to refer you to my manager?"
+''Alex:'' "Hey! Long time no see! The team I'm a part of at Corazón is hiring! We need a software engineer that's worked with electronic health records. The company makes medical devices that help thousands of people and the pay is pretty great as well! Want me to refer you to my manager?"
 
 -------
 //You're desperate for a job but also want to research the company first to find out if it's a good fit.//
@@ -308,31 +308,27 @@ CEO: "The official line is 'training an AI model to pre-emptively identify a str
 
 
 :: Manager Rejects Concern {"position":"1800,950","size":"100,100"}
-'You decide to bring your findings to your manager.
+'You decide to bring your findings to your manager, Dave.
 
-You explain what you observed, walking them through the reset behavior and your concerns about potential inaccuracies.
+You explain what you observed, walking him through the reset behavior and your concerns about potential inaccuracies.
 
-They listen, but their expression doesn't change.
+He listens, but his expression doesn't change.
 
-''Manager:'' "So you're not sure this actually affects real devices?"
+''Dave:'' "So you're not sure this actually affects real devices?"
 
 You hesitate.
 
 You explain that it might — but you don't have enough data to prove it yet.
 
-The manager leans back.
+Dave leans back.
 
-''Manager:'' "Then we're not going to escalate this based on a maybe."
-
-They continue.
-
-''Manager:'' "We have deadlines. If this was critical, it would've shown up already."
+''Dave:'' "Then we're not going to escalate this based on a maybe. We have deadlines. If this was critical, it would've shown up already."
 
 There is a long pause.
 
- ''Manager:'' "And to be honest, even if you proved it, there's no easy fix. We designed our implants for security, not remote access. We can't just patch the hard-coded value in the hardware like we can push update our app's UI. Any hotfix would involve a physical recall, and Corazón can't survive that kind of reputation loss. I doubt we'd be able to compensate our customers by covering their surgeries. We don't have the money to cover 100,000 surgeries."
+''Dave:'' "And to be honest, even if you proved it, there's no easy fix. We designed our implants for security, not remote access. We can't just patch the hard-coded value in the hardware like we can push update our app's UI. Any hotfix would involve a physical recall, and Corazón can't survive that kind of reputation loss. I doubt we'd be able to compensate our customers by covering their surgeries. We don't have the money to cover 100,000 surgeries."
 
-''Manager:'' "Let's just focus on your assigned work."
+''Dave:'' "Let's just focus on your assigned work."
 
 The conversation is over.
 
@@ -342,7 +338,7 @@ The issue hasn't gone away.
 
 But now you know one thing clearly:
 
-Management isn't interested, or they at least don't want to believe that their main product has an unfixable flaw. At least, not without stronger evidence.
+Dave isn't interested - or he doesn't want to believe that the company's main product has an unfixable flaw.
 
 ----
 [[Consult your coworkers to see if your concerns are valid->Talk to your coworkers]]
@@ -483,7 +479,7 @@ He exhales slowly.
 
 ''Alex:'' "This is a serious issue. Management will not like it. And if you go outside the company, there's no taking it back."
 
-There is brief pause as he considers his words.
+There is a brief pause as he considers his words.
 
 ''Alex:'' "I'm not telling you to stay silent. Just be sure you're ready for what comes next."
 
@@ -530,7 +526,7 @@ There's a brief silence.
 
 
 :: Talk to Alex (Low Confidence) {"position":"2250,1200","size":"100,100"}
-Later that day, you find Alex and ask if they have a minute.
+Later that day, you find Alex and ask if he has a minute.
 
 You explain what you found in the reset logic, but you also admit that you are not fully sure what it means yet.
 
@@ -570,19 +566,19 @@ Still, the possibility of patient harm is hard to ignore.
 
 
 :: Talk to Bob {"position":"2050,575","size":"100,100"}
-You walk them through what you've found.
+You walk him through what you've found.
 
-They don't interrupt.
+He doesn't interrupt.
 
-When you finish, they sit quietly for a moment.
+When you finish, he sits quietly for a moment.
 
 ''Bob:'' "You're right to be concerned."
 
-They turn their monitor toward you and pull up some internal logs.
+He turns his monitor toward you and pulls up some internal logs.
 
 ''Bob:'' "It's subtle. That's why it slipped through."
 
-They point at a pattern.
+He points at a pattern.
 
 Bob: "There is definitely a pattern because of the hard coded value."
 
@@ -592,7 +588,7 @@ You feel your stomach tighten.
 
 ''Bob:'' "This should've been investigated properly."
 
-They pause.
+He pauses.
 
 ''Bob:'' "But if you bring this up now, you're going to need to be very sure of what you're saying."
 
@@ -600,9 +596,7 @@ They pause.
     ''Bob:'' "You might also want to run this by Rob."
 ]
 
-You now have more confidence.
-
-But also more responsibility.
+You take a moment to process what he said.
 
 -------
 {
@@ -629,19 +623,18 @@ You decide to talk to Rob.
 
 After listening to your concern, he leans back in his chair and starts to think.
 
-''Rob: ''"Hmmmmmm, we'll first of all thanks for bringing this to my attention."
+''Rob: ''"Hmm. Well first of all, thanks for bringing this to my attention."
 
 ''Rob:'' "Our device is used to record a patient's heartbeat. They don't send electric shocks like an implantable cardioverter defibrillator (ICD) or inject drugs like an insulin pump."
 
 ''Rob:'' "Our device sends data through short range wireless signals, so any malicious party would have to be close to our clients. That's more of a physical attack rather than a remote hack over the internet. It's not exactly something that can be pulled off easily en masse."
 
-Quietly Rob whispers to you. 
+Rob quietly whispers to you. 
 
-\
 ''Rob:'' "And even if this eventually leads to a client's data being leaked, well we've been selling 'anonymized' data already so it's already out there."
 
 (if: (history:) does not contain "Talk to Bob")[
-    ''Rob: ''"Maybe Bob would know more."
+    ''Rob: ''"If you're still worried, you could run it by Bob."
 ]
 -------
 {
