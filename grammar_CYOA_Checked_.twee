@@ -15,7 +15,7 @@ Medical Implant CYOA
 :: Agree to Sell User Data {"position":"1425,675","size":"100,100"}
 "I'll get started on the API right away" you say. The CEO beams, clapping you on the shoulder.
 
-''CEO:'' "That's the team-player spirit we saw in you during the interview". You head back to your desk to get started on the API.
+''CEO:'' "That's the team-player spirit we saw in you during the interview." You head back to your desk to get started on the API.
 ----
 [[Continue->Potential Security Vulnerability]]
 
@@ -164,13 +164,13 @@ Joe has always been stubborn about accepting help and would never willingly tell
 You dive into the company's filesystem and access Joe's medical records. You're halfway through his most recent medical report when a shadow falls over your keyboard. 
 
 
-''Dave:''"Find the duplication bug yet?"
+''Dave:'' "Find the duplication bug yet?"
 
 
 You jump, nearly knocking your coffee over. It's Dave, the Engineering Manager. He isn't looking at you; he's looking at your monitor. His eyes narrow as he sees the name "Joe Smith" at the top of the medical report.
 
 
-''Dave:'' "That's not a log file,.... and that's User ID isn't in the ticket I gave you."
+''Dave:'' "That's not a log file... and that's User ID isn't in the ticket I gave you."
 
 
 Before you can stutter out an excuse Dave reaches over and turns off your computer.
@@ -406,11 +406,11 @@ Either way, this is now your problem.
 
 The CEO sighs, dropping the corporate persona.
 
-''CEO'' "Startups are expensive. We've expanded too quickly and the venture capitalist money is running out. Our charity program is also bleeding us dry. The pharmaceutical company is also willing to make a charitable 'donation' that would fund another 10,000 low-income patients."
+''CEO:'' "Startups are expensive. We've expanded too quickly and the venture capitalist money is running out. Our charity program is also bleeding us dry. The pharmaceutical company is also willing to make a charitable 'donation' that would fund another 10,000 low-income patients."
 
-''Manager'' "If you're worried about the legality, don't be. We snuck a clause into the Terms & Conditions months ago that allows for third party data transfers. It's perfectly legal as long as we anonymize the data."
+''Manager:'' "If you're worried about the legality, don't be. We snuck a clause into the Terms & Conditions months ago that allows for third party data transfers. It's perfectly legal as long as we anonymize the data."
 
-''CEO'' "Try to think about it as keeping our mission alive"
+''CEO:'' "Try to think about it as keeping our mission alive"
 ---------
 [[Ask more questions->Selling User Data]]
 [[Agree to do task->Agree to Sell User Data]]
@@ -433,7 +433,7 @@ The CEO sighs, dropping the corporate persona.
 
 The room goes cold. Your manager looks at the CEO, then back at you.
 
-''Manager:'' "How disappointing.... We hired you because we thought you'd do as you're told. Not act as the company's moral compass. If you won't do the work we'll find someone who will".
+''Manager:'' "How disappointing.... We hired you because we thought you'd do as you're told. Not act as the company's moral compass. If you won't do the work we'll find someone who will."
 
 
 :: Research the company {"position":"300,775","size":"100,100"}
@@ -623,7 +623,7 @@ You decide to talk to Rob.
 
 After listening to your concern, he leans back in his chair and starts to think.
 
-''Rob: ''"Hmm. Well first of all, thanks for bringing this to my attention."
+''Rob:'' "Hmm. Well first of all, thanks for bringing this to my attention."
 
 ''Rob:'' "Our device is used to record a patient's heartbeat. They don't send electric shocks like an implantable cardioverter defibrillator (ICD) or inject drugs like an insulin pump."
 
@@ -634,7 +634,7 @@ Rob quietly whispers to you.
 ''Rob:'' "And even if this eventually leads to a client's data being leaked, well we've been selling 'anonymized' data already so it's already out there."
 
 (if: (history:) does not contain "Talk to Bob")[
-    ''Rob: ''"If you're still worried, you could run it by Bob."
+    ''Rob:'' "If you're still worried, you could run it by Bob."
 ]
 -------
 {
@@ -680,7 +680,7 @@ And there's always your friend Alex.
 
 ''Manager:'' "Technically as long as we strip the personally identifiable information like names, SINs, and PHNs, we've met our regulatory obligations"
 
-''CEO'' "Just try to focus on the fact that this 'donation' will give us the opportunity to save 10,000 lives."
+''CEO:'' "Just try to focus on the fact that this 'donation' will give us the opportunity to save 10,000 lives."
 -------
 [[Ask more questions->Selling User Data]]
 [[Agree to do task->Agree to Sell User Data]]
