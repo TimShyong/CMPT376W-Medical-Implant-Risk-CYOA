@@ -17,7 +17,7 @@ Medical Implant CYOA
 
 ''CEO:'' "That's the team-player spirit we saw in you during the interview". You head back to your desk to get started on the API.
 ----
-([[Continue->Potential Security Vulnerability]])
+[[Continue->Potential Security Vulnerability]]
 
 
 :: Bug Bounty Article {"position":"450,650","size":"100,100"}
@@ -27,8 +27,8 @@ Medical Implant CYOA
 Corazón is committed to securing our patients' data. Which is why we encourage anyone to report vulnerabilities in our systems via our bug bounty hunting initiative for a cash reward!
 
 --------
-([[Research more->Research the company]])
-([[Accept the job interview->Orientation]])
+[[Research more->Research the company]]
+[[Accept the job interview->Orientation]]
 
 
 :: Charity Article {"position":"450,525","size":"100,100"}
@@ -40,8 +40,8 @@ Which is why Corazón is proud to announce we've partnered with several charitie
 
 - Corazón CEO
 -------
-([[Research more->Research the company]])
-([[Accept the job interview->Orientation]])
+[[Research more->Research the company]]
+[[Accept the job interview->Orientation]]
 
 
 :: Company's Commitment Article {"position":"450,375","size":"100,100"}
@@ -50,8 +50,8 @@ Millions of patients around the world trust Corazón with their data!
 
 Our heart device comes with a smart phone app to help monitor and control our devices wirelessly. We've used state of the art short range encrypted wireless connections to transfer and store your data. 
 ----
-([[Research more->Research the company]])
-([[Accept the job interview->Orientation]])
+[[Research more->Research the company]]
+[[Accept the job interview->Orientation]]
 
 
 :: Credits {"position":"300,1325","size":"100,100"}
@@ -59,6 +59,7 @@ Group Member and Roles:
 * Tim Shyong
 ** Created the Job Offer, Research the Company, Orientation, First Ticket, Selling User Data scenarios
 ** Added some more reasoning to "Manager Rejects Concerns" and "Talk to your coworkers (Rob)"
+** Added some conditional logic to make some text disapear in the "Talk with Bob/Rob" passages
 * Kyaw Htet Aung 
 ** Made a text outline for the potential decision paths of the player when "Potential Security Vulnerability" starts
 ** Refined the "Potential Security Vulnerability" scenario so that it makes more sense plot-wise. Added actual decision branches to it as well
@@ -196,14 +197,14 @@ You dive into the database logs and begin querying the database to cross referen
 
 It isn't related to your task at hand but you're concerned about your family member's health.
 -----
-([[Investigate your brother in law's data->Fired With Cause]])
-([[Focus on the task at hand]])
+[[Investigate your brother in law's data->Fired With Cause]]
+[[Focus on the task at hand]]
 
 
 :: Focus on the task at hand {"position":"925,775","size":"100,100"}
 Looking into Joe's medical history would be a massive breach of protocol. You decide to focus on the task at hand and just try to get through the day.
 ------
-([[Continue->Selling User Data]])
+[[Continue->Selling User Data]]
 
 
 :: Get Job Offer {"position":"300,1000","size":"100,100"}
@@ -213,8 +214,8 @@ It's Day 101 of the job hunt. After another day of nothing but automated rejecti
 
 -------
 //You're desperate for a job but also want to research the company first to find out if it's a good fit.//
-([[Research the company a bit first->Research the company]])
-([[Accept the job interview->Orientation]])
+[[Research the company a bit first->Research the company]]
+[[Accept the job interview->Orientation]]
 
 
 :: Homescreen {"position":"100,1000","size":"100,100"}
@@ -223,11 +224,11 @@ It's Day 101 of the job hunt. After another day of nothing but automated rejecti
 ==><==
 ([[Start->Get Job Offer]])
 
-Based on <a href="https://www.acm.org/code-of-ethics/case-studies/medical-implant-risk-analysis">Case Study: Medical Implant Risk Analysis</a>
-
 ([[Credits]])
 
 ([[References]])
+
+Based on <a href="https://www.acm.org/code-of-ethics/case-studies/medical-implant-risk-analysis">Case Study: Medical Implant Risk Analysis</a>
 
 
 :: Ignore Issue {"position":"1800,475","size":"100,100"}
@@ -285,8 +286,8 @@ Now it's no longer your choice alone.
    ** an unexplained stroke 
     ** unexplained fainting 
 -------
-([[Research more->Research the company]])
-([[Accept the job interview->Orientation]])
+[[Research more->Research the company]]
+[[Accept the job interview->Orientation]]
 
 
 :: Investigate Pharmaceutical Company {"position":"1250,600","size":"100,100"}
@@ -299,9 +300,9 @@ Your manager shrugs, but the CEO answers with a practiced smile:
 CEO: "The official line is 'training an AI model to pre-emptively identify a stroke.' But off the record? They might be compiling data to create a commerical asset they can sell. Honestly, once the data changes hands, it's not our responsibility. Our job is just to setup an API"
 
 -----
-([[Ask more questions->Selling User Data]])
-([[Agree to do task->Agree to Sell User Data]])
-([[Refuse to do task->Refuse to Sell User Data]])
+[[Ask more questions->Selling User Data]]
+[[Agree to do task->Agree to Sell User Data]]
+[[Refuse to do task->Refuse to Sell User Data]]
 
 
 :: Manager Rejects Concern {"position":"1800,950","size":"100,100"}
@@ -352,7 +353,7 @@ Congratulations!
 
 You passed the interview! Welcome to Corazón! Your first few days are a whirl, everyone seems super busy but excited for you to join the team. After getting up to speed on the company's structure and tools, you're given your first task.
 _______
-([[Start your first task ->First Ticket]])
+[[Start your first task ->First Ticket]]
 
 
 :: Potential Security Vulnerability {"position":"1625,650","size":"100,100"}
@@ -413,9 +414,9 @@ The CEO sighs, dropping the corporate persona.
 
 ''CEO'' "Try to think about it as keeping our mission alive"
 ---------
-([[Ask more questions->Selling User Data]])
-([[Agree to do task->Agree to Sell User Data]])
-([[Refuse to do task->Refuse to Sell User Data]])
+[[Ask more questions->Selling User Data]]
+[[Agree to do task->Agree to Sell User Data]]
+[[Refuse to do task->Refuse to Sell User Data]]
 
 
 :: References {"position":"300,1150","size":"100,100"}
@@ -440,11 +441,11 @@ The room goes cold. Your manager looks at the CEO, then back at you.
 :: Research the company {"position":"300,775","size":"100,100"}
 You stumble upon a couple interesting articles:
 --------------
-([[Read the article: Implantable Loop Recorder - A Lifesaving Device!->Implantable Heart Health Montiroing Device Article]])
-([[Read the article: Corazón Commits To Keeping Our User Data Safe ->Company's Commitment Article]])
-([[Read the article: Corazón Gives Back!->Charity Article]])
-([[Read the article: Corazón - Our Bug Bounty Program  ->Bug Bounty Article]])
-([[Accept the job interview->Orientation]])
+[[Read the article: Implantable Loop Recorder - A Lifesaving Device!->Implantable Heart Health Montiroing Device Article]]
+[[Read the article: Corazón Commits To Keeping Our User Data Safe ->Company's Commitment Article]]
+[[Read the article: Corazón Gives Back!->Charity Article]]
+[[Read the article: Corazón - Our Bug Bounty Program  ->Bug Bounty Article]]
+[[Accept the job interview->Orientation]]
 
 
 :: Selling User Data {"position":"1075,775","size":"100,100"}
@@ -456,11 +457,11 @@ Seeing this as a great opportunity to show your impact, your manager wants this 
 
 You set up a meeting with your manager and CEO to gather requirements. There you: 
 ------
-([[Ask why the pharmaceutical company wants our data->Investigate Pharmaceutical Company]])
-([[Ask why is Corazón doing this->Reasons to Sell User's Health Data]])
-([[Raise concern about our user's health data privacy->User Health Data Privacy]])
-([[Agree to do task->Agree to Sell User Data]])
-([[Refuse to do task->Refuse to Sell User Data]])
+[[Ask why the pharmaceutical company wants our data->Investigate Pharmaceutical Company]]
+[[Ask why is Corazón doing this->Reasons to Sell User's Health Data]]
+[[Raise concern about our user's health data privacy->User Health Data Privacy]]
+[[Agree to do task->Agree to Sell User Data]]
+[[Refuse to do task->Refuse to Sell User Data]]
 
 
 :: Talk to Alex (High Confidence) {"position":"2250,400","size":"100,100"}
@@ -489,40 +490,6 @@ You already knew that.
 But hearing it out loud makes the weight of the decision clearer.
 
 ----
-[[Decide what to do next->Whistleblowing Dilemma]]
-[[Step back and leave it alone->Ignore Issue]]
-
-
-:: Talk to Alex (Mid Confidence)
-
-You find Alex and explain what you've discovered.
-
-You tell him about the reset issue, and that you've already talked to Bob and Rob.
-
-They didn't agree.
-
-Bob thinks it's serious. Rob doesn't.
-
-Alex listens, frowning slightly.
-
-''Alex:'' "…yeah, that makes this tricky."
-
-He pauses for a moment.
-
-''Alex:'' "I'm not really the best person to judge something like this."
-
-''Alex:'' "If the people closer to it can't agree, I don't think I can give you a better answer."
-
-He looks at you.
-
-''Alex:'' "You're going to have to decide what you think this is."
-
-There's a brief silence.
-
-''Alex:'' "And what you're willing to do about it."
-
-----
-
 [[Decide what to do next->Whistleblowing Dilemma]]
 [[Step back and leave it alone->Ignore Issue]]
 
@@ -565,6 +532,39 @@ Still, the possibility of patient harm is hard to ignore.
 ----
 [[Rethink your options carefully->Whistleblowing Dilemma]]
 [[Drop the issue for now->Ignore Issue]]
+
+
+:: Talk to Alex (Mid Confidence) {"position":"2275,775","size":"100,100"}
+You find Alex and explain what you've discovered.
+
+You tell him about the reset issue, and that you've already talked to Bob and Rob.
+
+They didn't agree.
+
+Bob thinks it's serious. Rob doesn't.
+
+Alex listens, frowning slightly.
+
+''Alex:'' "…yeah, that makes this tricky."
+
+He pauses for a moment.
+
+''Alex:'' "I'm not really the best person to judge something like this."
+
+''Alex:'' "If the people closer to it can't agree, I don't think I can give you a better answer."
+
+He looks at you.
+
+''Alex:'' "You're going to have to decide what you think this is."
+
+There's a brief silence.
+
+''Alex:'' "And what you're willing to do about it."
+
+----
+
+[[Decide what to do next->Whistleblowing Dilemma]]
+[[Step back and leave it alone->Ignore Issue]]
 
 
 :: Talk to Bob {"position":"2050,575","size":"100,100"}
@@ -687,9 +687,9 @@ And there's always your friend Alex.
 
 ''CEO'' "Just try to focus on the fact that this 'donation' will give us the opportunity to save 10,000 lives."
 -------
-([[Ask more questions->Selling User Data]])
-([[Agree to do task->Agree to Sell User Data]])
-([[Refuse to do task->Refuse to Sell User Data]])
+[[Ask more questions->Selling User Data]]
+[[Agree to do task->Agree to Sell User Data]]
+[[Refuse to do task->Refuse to Sell User Data]]
 
 
 :: Whistleblowing Dilemma {"position":"2450,625","size":"100,100"}
