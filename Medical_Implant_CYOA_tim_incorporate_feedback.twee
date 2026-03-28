@@ -176,7 +176,7 @@ Before you can stutter out an excuse Dave reaches over and turns off your comput
 ''Dave:'' "Step away from the desk. Now!"
 
 
-You try to explain, telling him Joe is family and that you were just worried, but Dave’s expression doesn't change at all.
+You try to explain, telling him Joe is family and that you were just worried, but Dave's expression doesn't change at all.
 
 
 ''Dave:'' "I don't care if he's your brother in law. You didn't just 'check' a file. You bypassed all our security measures to access highly sensitive Private Health Information without a clinical or technical requirement. This is a massive violation of PIPEDA and our internal data governance policy." 
@@ -567,7 +567,7 @@ You now have more confidence.
 But also more responsibility.
 
 ----
-[[Talk to Rob]]
+[[Talk to Rob->Blocked Rob]]
 [[Talk to Alex->Talk to Alex (High Confidence)]]
 [[Decide it's too risky and step back->Ignore Issue]]
 [[Think through the situation on your own->Whistleblowing Dilemma]]
@@ -578,7 +578,7 @@ You decide to talk to Rob.
 
 After listening to your concern, he leans back in his chair and starts to think.
 
-''Rob: ''"Hmmmmmm, we'll first of all thanks for bringing this to my attention."
+''Rob: ''"Hmm, we'll first of all thanks for bringing this to my attention."
 
 ''Rob:'' "Our device is used to record a patient's heartbeat. They don't send electric shocks like an implantable cardioverter defibrillator (ICD) or inject drugs like an insulin pump."
 
@@ -591,25 +591,43 @@ Quietly Rob whispers to you.
 ''Rob: ''"Maybe Bob would know more."
 
 ------
-(link: "Talk to Bob")[
-    (if: (history:) contains "Talk to Bob")[
-        (go-to: "Talk to Alex (High Confidence)")
-    ]
-    (else:)[
-        (go-to: "Talk to Bob")
-    ]
-]
-(link: "Talk to Alex")[
-    (if: (history:) contains "Talk to Bob")[
-        (go-to: "Talk to Alex (High Confidence)")
-    ]
-    (else:)[
-        (go-to: "Talk to Alex (Low Confidence)")
-    ]
-]
+[[Talk to Bob->Blocked Bob]]
+[[Talk to Alex->Talk to Alex (Low Confidence)]]
 [[Decide it's too risky and step back->Ignore Issue]]
 [[Think through the situation on your own->Whistleblowing Dilemma]]
 
+
+:: Blocked Rob
+
+You consider talking to Rob to get a broader perspective.
+
+But he's tied up in a meeting about system architecture deadlines.
+
+You could wait, but this doesn't feel like something you should delay.
+
+You'll have to move forward without his input.
+
+----
+
+[[Talk to Alex->Talk to Alex (High Confidence)]]
+[[Decide it's too risky and step back->Ignore Issue]]
+[[Think through the situation on your own->Whistleblowing Dilemma]]
+
+:: Blocked Bob
+
+You look around for Bob, hoping to get a second opinion.
+
+His desk is empty.
+
+Someone nearby mentions he stepped out for the day.
+
+You sigh. Looks like that option's off the table for now.
+
+----
+
+[[Talk to Alex->Talk to Alex (Low Confidence)]]
+[[Decide it's too risky and step back->Ignore Issue]]
+[[Think through the situation on your own->Whistleblowing Dilemma]]
 
 :: Talk to your coworkers {"position":"1800,700","size":"100,100"}
 You decide not to escalate yet.
